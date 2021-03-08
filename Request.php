@@ -9,14 +9,14 @@ class Request implements IRequest
         $this->bootstrapSelf();
     }
 
-    private function bootstrapSelf()
+    private function bootstrapSelf(): void
     {
         foreach ($_SERVER as $key => $value) {
             $this->{$this->toCamelCase($key)} = $value;
         }
     }
 
-    private function toCamelCase($string)
+    private function toCamelCase($string): string
     {
         $result = strtolower($string);
 
