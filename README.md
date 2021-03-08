@@ -1,7 +1,7 @@
 A simple PHP Router.
 
-##Usage
+## Usage
 
-`
+`sh
 php -S 127.0.0.1:8000
 `
